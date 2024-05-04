@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Album Generator</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Album Generator</h1>
+        <h3>Below are the inputs to add your own images to the album. Input the title, image, and description.</h3>
+        <form id="albumForm">
+            <div>
+                <h3>Title</h3>
+                <input type="text" id="title" name="title">
+            </div>
+            <div>
+                <h3>Image</h3>
+                <input type="file" id="image" name="image">
+            </div>
+            <div>
+                <h3>Description</h3>
+                <input type="text" id="description" name="description">
+            </div>
+            <div class="ineedpaddinghere">
+                <button type="button" onclick="submitForm()">Submit Entry</button>
+            </div>
+        </form>
+    </header>
+    <div class="albumcontainer">
+        <!-- New album entries will be appended here -->
+    </div>
+</body>
+</html>
